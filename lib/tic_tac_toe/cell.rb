@@ -6,6 +6,7 @@ module TicTacToe
 
     def initialize(number)
       raise "Invalid cell number" if number < 1 || number > 9
+
       @number = number
     end
 
@@ -19,6 +20,7 @@ module TicTacToe
 
     def value=(val)
       raise "Already a symbol here" if @value
+
       @value = val
     end
   end

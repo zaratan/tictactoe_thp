@@ -19,6 +19,7 @@ module TicTacToe
 
     def play(position:, symbol:)
       raise "Out ouf bound position" if position < 1 || position > 9
+
       @cells[position - 1].value = symbol
     end
 

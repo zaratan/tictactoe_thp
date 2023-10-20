@@ -36,6 +36,7 @@ module TicTacToe
       print "Where do you want to play ?\n"
       position = gets.to_i
       raise "This is not a valid position" if position.zero?
+
       position
     end
 
@@ -53,7 +54,7 @@ module TicTacToe
     end
 
     def play_position(position)
-      @board.play(position: position, symbol: @current_player)
+      @board.play(position:, symbol: @current_player)
     end
 
     def win?
